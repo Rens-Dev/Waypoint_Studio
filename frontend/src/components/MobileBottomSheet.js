@@ -99,7 +99,7 @@ export const MobileBottomSheet = ({
         {sheet === 'tools' && (
           <div className="p-4 pt-0 space-y-3">
             <h3 className="text-sm font-semibold mb-2" style={{ color: 'var(--ws-teal)', fontFamily: 'Space Grotesk, sans-serif' }}>Tools</h3>
-            <Button size="sm" className="w-full gap-1.5 h-11" onClick={() => { setAutoRouteOpen(true); }} style={{ background: 'var(--ws-blue)', color: 'white' }}>
+            <Button size="sm" className="w-full gap-1.5 h-11" onClick={() => { setAutoRouteOpen(true); onClose(); }} style={{ background: 'var(--ws-blue)', color: 'white' }}>
               <Wand2 className="w-4 h-4" /> Auto Route Maker
             </Button>
             <input ref={fileInputRef} type="file" accept=".gpx" className="hidden" onChange={handleFileSelect} />
